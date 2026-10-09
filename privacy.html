@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GigBinder privacy policy</title>
+<style>
+  :root{color-scheme:light dark;--bg:#faf8f4;--ink:#1f1b16;--soft:#55504a;--rule:#e7e1d6;--link:#7a4c0a;--code:#f1ede4}
+  @media (prefers-color-scheme: dark){:root{--bg:#17140f;--ink:#f1ece2;--soft:#c9c0b2;--rule:#382f22;--link:#f0b95a;--code:#241f17}}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 20px}
+  main{max-width:44rem;margin:0 auto;padding-block:40px 80px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+  h2{font-size:1.2rem;margin:2.2rem 0 .4rem;padding-top:1.2rem;border-top:1px solid var(--rule)}
+  .meta{color:var(--soft);font-size:.95rem;margin:0 0 1.5rem}
+  a{color:var(--link)}
+  code{background:var(--code);padding:.1em .35em;border-radius:3px;font-size:.9em}
+  li{margin:.3rem 0}
+</style>
+</head>
+<body>
+<main>
+<h1>GigBinder privacy policy</h1>
+<p class="meta"><strong>Effective:</strong> October 9, 2026<br><strong>App:</strong> GigBinder (<code>com.gigbinder.app</code>) for Android<br><strong>Developer:</strong> deterrak<br><strong>Contact:</strong> privacy@gigbinder.app</p>
+<p>GigBinder is a tool for gigging musicians: your charts, set lists and backing tracks, kept on your own device. This policy says what the app does with information. The short version is that <strong>GigBinder has no accounts, no ads and no analytics, and the developer runs no servers that receive your data.</strong></p>
+<h2>What stays on your device</h2>
+<p>Everything you put into GigBinder (song files, set lists, gigs, annotations, tags, settings) is stored on your device, in the library folder you choose and in the app's private storage. It is not uploaded to the developer, because there is nothing to upload it to. If you choose a folder that another service syncs, such as a cloud-drive folder, that service handles those files under its own terms.</p>
+<p>Uninstalling the app removes its private storage. Your library folder is yours and is left as it is.</p>
+<h2>Information the app uses, and why</h2>
+<p><strong>Microphone.</strong> Used by the instrument tuner and nothing else. The app asks the first time you open the tuner. Sound is analysed in memory a moment at a time to find the pitch and level, then discarded. It is never recorded, saved or sent anywhere. The microphone is released when you leave the tuner.</p>
+<p><strong>Photos of charts.</strong> "Scan a chart" opens your camera app (or your photo picker) and reads the text from the picture on your device, using a text-recognition model that is bundled inside the app. The picture is not uploaded. A photo taken through the app is deleted as soon as the text has been read; a photo you pick from your gallery is never touched. GigBinder itself does not hold the camera permission. The camera app that takes the picture is Android's own or whichever one you choose, and it handles the photo under its own terms until GigBinder receives it. GigBinder uses Google's ML Kit text-recognition library for this step. The recognition model is bundled inside GigBinder and runs on your device, so the picture and the text read from it are not sent to Google or to the developer. Like other Google libraries, ML Kit may send Google basic technical diagnostics, such as performance and error information about the library, which does not include your pictures or text. See <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms and privacy information</a> for details.</p>
+<p><strong>Nearby devices, Wi-Fi and location (Band Sync).</strong> Band Sync links the phones and tablets in your band directly to each other over Wi-Fi Direct. It does not use the internet. Android requires the "nearby devices" permission (or, on Android 12 and older, the location permission) before an app may use these radios. GigBinder does not read your location and does not use these permissions to find out where you are.</p>
+<p>What bandmates can see: the display name you set for Band Sync (which defaults to your device's model name), your role in the band, and the set list and song files the leader sends. The band's Wi-Fi network is protected with a password that the app derives from the band name, so a band name that is easy to guess makes the network easier to join. The optional spectator view is a read-only page that anyone connected to the band's network can open in a browser while the leader is leading.</p>
+<p><strong>Bluetooth.</strong> Used to find and connect to Bluetooth MIDI devices you choose to send MIDI to. Nothing is collected from them.</p>
+<p><strong>Notifications.</strong> Used to show the notification Android requires while Band Sync is running.</p>
+<p><strong>Do Not Disturb access.</strong> If you turn on "Silence alerts during a song", the app turns Do Not Disturb on while a chart is open and restores your own setting afterwards. It does not read your notifications.</p>
+<p><strong>Files.</strong> The app reads and writes only the library folder you pick, and files you explicitly open, import, export or share.</p>
+<h2>When the app uses the internet</h2>
+<p>GigBinder goes online only when you use one of these features, or when Google Play does something on its own:</p>
+<ul><li><strong>Searching the web for charts.</strong> The in-app browser loads search engines (Google, DuckDuckGo) and whichever sites you visit. Those sites receive what any website receives from a browser: your IP address, what you search for, and cookies. They are governed by their own privacy policies. GigBinder sends them nothing beyond that.</li><li><strong>Find song details.</strong> When you tap it, the song title, artist and album you typed are sent to the <a href="https://getsongbpm.com">GetSongBPM</a> and <a href="https://musicbrainz.org">MusicBrainz</a> services to look up key, tempo, release year and genre. Nothing else is sent. The request carries an API key that identifies the app, not you. Both services see your IP address, as any website would.</li><li><strong>Purchases.</strong> The full version is a one-time purchase handled entirely by Google Play. GigBinder never sees your payment details. The app asks Google Play whether this Google account owns the full version, and keeps only a yes-or-no answer on the device.</li><li><strong>Sound pack download.</strong> The synthesised-MIDI sound bank is delivered by Google Play, under Google's terms.</li><li><strong>Links you open or share.</strong> Links open in your browser. Sharing hands a file to the app you pick in Android's share sheet.</li></ul>
+<h2>Backups</h2>
+<p>If Android's backup is turned on for your device, Android may back up the app's settings, annotations and custom metronome sounds to your Google account, and carry them over when you move to a new device. That is controlled by your device and your Google account, not by GigBinder or the developer.</p>
+<h2>What the developer collects</h2>
+<p>Nothing. GigBinder contains no analytics, advertising or crash-reporting software of its own (the ML Kit note above is the only exception), creates no account or profile, and does not read advertising IDs, contacts, messages or location. The developer does not receive your files, your set lists, your name or any information about how you use the app.</p>
+<h2>Children</h2>
+<p>GigBinder is a general-purpose musician's tool and is not directed at children under 13. It does not knowingly collect information from anyone.</p>
+<h2>Your choices</h2>
+<p>You can deny or revoke any permission in Android's settings; the matching feature will stop working and nothing else will. You can delete your data by deleting the library folder and uninstalling the app. Because the developer holds no data about you, there is nothing to request or delete on our side.</p>
+<h2>Changes to this policy</h2>
+<p>If the app's behaviour changes in a way that affects this policy, the policy will be updated before that version is released, and the effective date at the top will change.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: privacy@gigbinder.app.</p>
+</main>
+</body>
+</html>
